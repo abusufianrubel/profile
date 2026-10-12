@@ -11,8 +11,8 @@ export function TechStackSection() {
       <div className="container">
         <SectionHeading
           eyebrow="Tech Stack"
-          title="Modern tools for secure, scalable application delivery."
-          description="A practical stack shaped by enterprise applications, payment platforms, APIs, and production deployments."
+          title="Technologies I work with."
+          description="The languages, frameworks, databases, and deployment tools I use across backend and full-stack development."
         />
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {techStack.map((category, index) => {

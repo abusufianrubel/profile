@@ -12,8 +12,8 @@ export function EducationSection() {
       <div className="container">
         <SectionHeading
           eyebrow="Education"
-          title="Academic foundation in computer science and telecommunications."
-          description="Education content is kept in a single editable data file for easy correction before final launch."
+          title="Education in computer science and telecommunications."
+          description="My academic background includes a B.Sc. in Computer Science and Telecommunication Engineering from Noakhali Science & Technology University."
         />
         <div className="mx-auto grid max-w-4xl gap-5">
           {education.map((item, index) => (

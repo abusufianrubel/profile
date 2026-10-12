@@ -50,7 +50,7 @@ export function ContactSection() {
       return;
     }
 
-    toast({ title: "Message sent", description: "Thank you. Rubel will get back to you soon.", variant: "success" });
+    toast({ title: "Message sent", description: "Thanks for reaching out. I’ll get back to you soon.", variant: "success" });
     reset({ name: "", email: "", message: "", company: "", sourcePage: window.location.href });
   };
 
@@ -59,14 +59,14 @@ export function ContactSection() {
       <div className="container">
         <SectionHeading
           eyebrow="Contact"
-          title="Available for remote engineering opportunities."
-          description="For senior backend, Laravel, API, ERP, payment integration, and production deployment work, send a direct inquiry."
+          title="Let’s discuss your role or project."
+          description="I’m open to remote software engineering, full-stack development, and backend roles, as well as project collaborations."
         />
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <Card className="p-6 sm:p-8">
-            <h3 className="text-2xl font-semibold tracking-tight text-foreground">Let’s build reliable systems.</h3>
+            <h3 className="text-2xl font-semibold tracking-tight text-foreground">Get in touch.</h3>
             <p className="mt-4 text-sm leading-7 text-muted-foreground">
-              Based in Dhaka, Bangladesh and available for remote opportunities with international teams, startups, and product companies.
+              I’m based in Dhaka, Bangladesh and available to work remotely with international teams, startups, and product companies.
             </p>
             <div className="mt-8 space-y-4">
               <ContactItem icon={Mail} label="Email" value={siteConfig.email} href={`mailto:${siteConfig.email}`} />

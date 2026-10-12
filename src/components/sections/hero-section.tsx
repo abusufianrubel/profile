@@ -15,10 +15,10 @@ import {
 import { RESUME_URL } from "@/config/site";
 
 const stats = [
-  { icon: Rocket, value: "5+", label: "Years Experience" },
-  { icon: Code2, value: "50+", label: "Projects Delivered" },
-  { icon: Users, value: "30+", label: "Happy Clients" },
-  { icon: ShieldCheck, value: "100%", label: "Commitment" },
+  { icon: Rocket, value: "5+", label: "Years of Experience" },
+  { icon: Code2, value: "20+", label: "Projects Delivered" },
+  { icon: Users, value: "1,500+", label: "Martvill Vendors" },
+  { icon: ShieldCheck, value: "10+", label: "Integrations" },
 ];
 
 const skills = [
@@ -58,26 +58,26 @@ export function HeroSection() {
         >
           <div className="mx-auto mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-300/80 bg-white/80 px-4 py-2 text-xs font-semibold text-cyan-700 shadow-sm backdrop-blur dark:border-cyan-500/30 dark:bg-slate-900/70 dark:text-cyan-200 lg:mx-0">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            5+ Years Experience · Laravel & Backend Specialist · Remote Ready
+            5+ Years of Experience · Laravel & Full-Stack Development
           </div>
 
           <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 dark:text-white sm:text-5xl md:text-6xl xl:text-7xl lg:mx-0">
-            I build{" "}
+            Software{" "}
             <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-sky-400 bg-clip-text text-transparent">
-              Scalable,
+              Engineer
             </span>
             <br />
-            Secure & Business-
+            &amp; Full-Stack
             <br />
-            Focused Software
+            Developer
             <br />
-            Solutions
+            Portfolio
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-300 sm:text-lg lg:mx-0">
-            I help businesses grow by building secure backend systems, web
-            applications, ERP modules, eCommerce platforms, and payment gateway
-            solutions with clean architecture and modern technologies.
+            I’m Abu Sufian Rubel, based in Dhaka, Bangladesh. I build web
+            applications, REST APIs, ERP modules, and payment integrations
+            with Laravel, PHP, Golang, Vue.js, and React.
           </p>
 
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
@@ -93,7 +93,7 @@ export function HeroSection() {
               href="#contact"
               className="inline-flex items-center justify-center gap-3 rounded-2xl border border-slate-300 bg-white px-7 py-4 text-sm font-bold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-400 hover:text-blue-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-cyan-400 dark:hover:text-cyan-300"
             >
-              Hire Me <ArrowUpRight size={17} />
+              Contact Me <ArrowUpRight size={17} />
             </a>
           </div>
 
@@ -136,7 +136,7 @@ export function HeroSection() {
             <div className="absolute inset-[10%] overflow-hidden rounded-full border border-white/80 bg-white shadow-inner dark:border-slate-700/80 dark:bg-slate-900">
               <Image
                 src="/sufian2.png"
-                alt="Abu Sufian Rubel"
+                alt="Portrait of Abu Sufian Rubel"
                 fill
                 priority
                 sizes="(max-width: 768px) 90vw, 520px"
@@ -225,7 +225,7 @@ export function HeroSection() {
                 </h3>
 
                 <p className="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">
-                  Open to exciting projects and collaborations
+                  Open to engineering roles and project collaborations
                 </p>
               </div>
 

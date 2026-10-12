@@ -11,8 +11,8 @@ export function AboutSection() {
       <div className="container">
         <SectionHeading
           eyebrow="About"
-          title="Business-focused engineering with production discipline."
-          description="Clean architecture, secure integrations, performance optimization, and scalable backend systems for real products."
+          title="Backend expertise with a full-stack perspective."
+          description="I build and maintain web applications, with a focus on reliable APIs, clear architecture, and practical performance improvements."
         />
         <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
           <motion.div

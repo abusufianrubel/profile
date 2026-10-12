@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: absoluteUrl(siteConfig.url, "/opengraph-image"),
         width: 1200,
         height: 630,
-        alt: "Abu Sufian Rubel portfolio Open Graph image",
+        alt: "Abu Sufian Rubel — Software Engineer & Full-Stack Developer",
       },
     ],
   },

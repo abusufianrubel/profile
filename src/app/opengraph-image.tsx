@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { siteConfig } from "@/config/site";
 
 export const runtime = "edge";
-export const alt = "Abu Sufian Rubel — Senior Software Engineer";
+export const alt = "Abu Sufian Rubel — Software Engineer & Full-Stack Developer";
 export const size = {
   width: 1200,
   height: 630
@@ -60,11 +60,11 @@ export default function OpenGraphImage() {
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24, maxWidth: 880 }}>
           <h1 style={{ fontSize: 72, lineHeight: 0.95, letterSpacing: "-0.06em", margin: 0 }}>{siteConfig.displayName}</h1>
-          <p style={{ fontSize: 34, color: "rgba(248,250,252,.82)", margin: 0 }}>Senior Software Engineer</p>
-          <p style={{ fontSize: 28, color: "#5eead4", margin: 0 }}>Laravel · Backend · APIs · Enterprise Systems</p>
+          <p style={{ fontSize: 34, color: "rgba(248,250,252,.82)", margin: 0 }}>Software Engineer &amp; Full-Stack Developer</p>
+          <p style={{ fontSize: 28, color: "#5eead4", margin: 0 }}>Laravel · Golang · Vue.js · REST APIs</p>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 24, color: "rgba(248,250,252,.72)" }}>
-          <span>Dhaka, Bangladesh · Remote Ready</span>
+          <span>Dhaka, Bangladesh · Open to Remote Work</span>
           <span>{siteConfig.email}</span>
         </div>
       </div>

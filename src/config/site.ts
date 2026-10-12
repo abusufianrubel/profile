@@ -3,24 +3,25 @@ export const RESUME_URL = "/Abu-Sufian-Rubel-Resume.pdf";
 export const siteConfig = {
   name: "Abu Sufian Rubel — Software Engineer",
   displayName: "Abu Sufian Rubel",
-  role: "Senior Software Engineer, Laravel Developer",
+  role: "Software Engineer & Full-Stack Developer",
   location: "Dhaka, Bangladesh",
   remoteAvailability: "Available for Remote Opportunities",
   experience: "5+ Years",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://your-vercel-domain.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://sufiandev.vercel.app/",
   email: "rubel.nstu27@gmail.com",
   phone: "+8801320583389",
   whatsappUrl: "https://wa.me/8801320583389",
   githubUrl: "https://github.com/sufianrubel",
-  linkedinUrl: "https://www.linkedin.com/in/sufian24/",
+  linkedinUrl: "https://www.linkedin.com/in/sufianrubel/",
   resumeUrl: RESUME_URL,
   seo: {
-    title: "Abu Sufian Rubel — Senior Software Engineer & Laravel Developer",
+    title: "Abu Sufian Rubel | Software Engineer & Full-Stack Developer",
     description:
-      "Abu Sufian Rubel is a Senior Software Engineer and Laravel Developer from Dhaka, Bangladesh, specializing in enterprise applications, REST APIs, payment gateway integration, ERP systems, and scalable backend architecture.",
+      "Software engineer and full-stack developer in Dhaka with 5+ years of experience in Laravel, PHP, Golang, Vue.js, REST APIs, ERP, and payment integrations.",
     keywords: [
       "Abu Sufian Rubel",
-      "Senior Software Engineer Bangladesh",
+      "Software Engineer Bangladesh",
+      "Full-Stack Developer Bangladesh",
       "Laravel Developer Bangladesh",
       "Backend Developer Dhaka",
       "PHP Laravel Developer",
@@ -35,7 +36,7 @@ export const siteConfig = {
 
 export const navItems = [
   { label: "About", href: "#about" },
-  { label: "Stack", href: "#tech-stack" },
+  { label: "Tech Stack", href: "#tech-stack" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Services", href: "#services" },

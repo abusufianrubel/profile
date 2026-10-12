@@ -13,8 +13,8 @@ export function ExperienceSection() {
       <div className="container">
         <SectionHeading
           eyebrow="Experience"
-          title="Enterprise backend, payments, eCommerce, and hotel operations."
-          description="A focused timeline of production engineering experience across Laravel, Golang, APIs, ERP, and cloud-ready systems."
+          title="Software engineering experience."
+          description="My work spans Laravel applications, payment platforms, eCommerce ERP systems, and hotel operations backends."
         />
         <div className="relative mx-auto max-w-5xl">
           <div aria-hidden="true" className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-primary via-accent to-transparent md:block" />

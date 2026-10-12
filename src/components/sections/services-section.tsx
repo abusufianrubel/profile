@@ -11,8 +11,8 @@ export function ServicesSection() {
       <div className="container">
         <SectionHeading
           eyebrow="Services"
-          title="Professional capability areas for high-trust delivery."
-          description="Job-focused engineering services without pricing, positioned around backend strength, architecture, and deployment readiness."
+          title="How I can contribute to your team."
+          description="From API development and payment integrations to ERP modules and deployment, I help teams build and maintain web applications."
         />
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => {

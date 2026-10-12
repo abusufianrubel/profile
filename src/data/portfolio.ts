@@ -52,6 +52,8 @@ export type Education = {
 
 export type Project = {
   name: string;
+  image: string;
+  imageAlt: string;
   type: string;
   overview: string;
   techStack: string[];
@@ -70,27 +72,27 @@ export type Service = {
 };
 
 export const hero = {
-  badge: "5+ Years Experience · Laravel & Backend Specialist · Remote Ready",
-  heading: "Senior Software Engineer Building Scalable Enterprise Solutions",
+  badge: "5+ Years of Experience · Laravel & Full-Stack Development",
+  heading: "Software Engineer & Full-Stack Developer",
   intro:
-    "I build secure, scalable, and business-focused backend systems, enterprise applications, payment platforms, and cloud-ready web solutions using Laravel, PHP, Golang, Vue.js, React, Next.js, and modern DevOps practices."
+    "I’m Abu Sufian Rubel, based in Dhaka, Bangladesh. I build web applications, REST APIs, ERP modules, and payment integrations with Laravel, PHP, Golang, Vue.js, and React."
 };
 
 export const about = {
   summary:
-    "Abu Sufian Rubel is a Software Engineer with 5+ years of hands-on experience building scalable web applications, secure backend systems, ERP modules, eCommerce platforms, REST APIs, and payment gateway solutions. He has worked with Laravel, PHP, JavaScript, Vue.js, React, Golang, MySQL, PostgreSQL, Redis, Docker, AWS, CI/CD pipelines, and modern development practices. His focus is clean architecture, performance optimization, secure integrations, and business-aligned software delivery.",
+    "I’m a software engineer and full-stack developer with 5+ years of experience building web applications for payments, eCommerce, and hotel operations. My strongest focus is backend development with Laravel, PHP, and Golang, supported by frontend work with Vue.js and React. I’ve built ERP modules, integrated payment gateways and property management systems, and improved performance through database optimization and Redis caching. I also work with Docker, AWS, and CI/CD pipelines to support production deployments. I care about clear code, reliable integrations, and software that makes everyday work easier.",
   highlights: [
-    { title: "5+ Years Experience", icon: BadgeCheck },
+    { title: "5+ Years of Experience", icon: BadgeCheck },
     { title: "Enterprise Applications", icon: Building2 },
     { title: "Payment Gateway Solutions", icon: Banknote },
     { title: "ERP/HRM Development", icon: Workflow },
     { title: "Cloud & API Architecture", icon: Cloud }
   ] satisfies Highlight[],
   stats: [
-    { value: "5+", label: "Years Experience" },
+    { value: "5+", label: "Years of Experience" },
     { value: "20+", label: "Projects" },
     { value: "10+", label: "Integrations" },
-    { value: "10,000+", label: "Daily Transactions / Operations Supported" }
+    { value: "10,000+", label: "Daily Hotel Operations Supported" }
   ] satisfies Stat[]
 };
 
@@ -138,9 +140,9 @@ export const experiences: Experience[] = [
     duration: "Mar 2021 – Oct 2024",
     items: [
       "Developed and maintained Laravel-based enterprise applications, ERP modules, eCommerce systems, and payment gateway platforms.",
-      "Worked on Martvill, a multi-vendor eCommerce ERP platform with vendor, inventory, payment, and commission management modules.",
+      "Developed vendor, inventory, payment, and commission management modules for Martvill, a multi-vendor eCommerce ERP platform.",
       "Led backend development for PayMoney, a secure Laravel-based multi-currency payment gateway.",
-      "Implemented RBAC, modular APIs, responsive dashboards, and integrations using Laravel and Vue.js.",
+      "Implemented role-based access control (RBAC), modular APIs, and responsive dashboards with Laravel and Vue.js.",
       "Optimized MySQL queries and backend workflows to improve performance and reduce server load.",
       "Collaborated on Docker, GitHub Actions, CI/CD pipelines, and AWS-based cloud deployments."
     ]
@@ -182,9 +184,11 @@ export const education: Education[] = [
 export const projects: Project[] = [
   {
     name: "PayMoney",
+    image: "/projects/paymoney.jpg",
+    imageAlt: "Illustrative payment platform preview for PayMoney; not a product screenshot",
     type: "Online Payment Gateway",
     overview:
-      "A secure multi-currency payment gateway platform built with Laravel, OAuth2, JWT, and third-party payment integrations.",
+      "A Laravel payment platform for multi-currency and cryptocurrency transactions. I led backend development and worked on authentication, payment integrations, and transaction processing.",
     techStack: ["Laravel", "PHP", "MySQL", "REST API", "OAuth2", "JWT", "PayPal API", "Stripe API", "CoinPayments API"],
     achievements: [
       "Built secure backend architecture for multi-currency and crypto transactions.",
@@ -202,9 +206,11 @@ export const projects: Project[] = [
   },
   {
     name: "Hotel Manager Panel",
+    image: "/projects/hotel-manager-panel.svg",
+    imageAlt: "Illustrative hotel operations preview for Hotel Manager Panel; not a product screenshot",
     type: "Hotel Operations Backend Platform",
     overview:
-      "A backend platform for hotel operations, PMS integrations, and high-volume operational workflows.",
+      "A hotel operations backend built with Golang and Node.js. My work covers hotel management services, property management system (PMS) integrations, and performance optimization.",
     techStack: ["Golang", "Node.js", "PostgreSQL", "Redis", "REST API", "Microservices"],
     achievements: [
       "Built backend services for hotel management workflows.",
@@ -222,16 +228,18 @@ export const projects: Project[] = [
   },
   {
     name: "MeritEye",
+    image: "/projects/meriteye.svg",
+    imageAlt: "Illustrative vue.js application preview for MeritEye; not a product screenshot",
     type: "Vue.js Web Application",
     overview:
-      "A modern frontend application built with Vue 3, Pinia, and Vue Router for structured, scalable client-side experiences.",
+      "A Vue 3 web application where I worked on reusable components, state management with Pinia, and navigation with Vue Router.",
     techStack: ["Vue 3", "Pinia", "Vue Router", "JavaScript", "REST API"],
     achievements: [
-      "Built modular frontend architecture using Vue 3 ecosystem.",
+      "Built modular frontend components with Vue 3.",
       "Implemented state management with Pinia and route-based navigation.",
-      "Focused on responsive UI, maintainable components, and smooth user experience."
+      "Developed responsive interfaces and maintainable components."
     ],
-    businessImpact: ["Improved frontend scalability and user flow for a modern web application."],
+    businessImpact: ["Made frontend features easier to maintain and navigation easier to follow."],
     github: "https://github.com/MeritEye/merit", // TODO: Replace with MeritEye GitHub URL.
     liveDemo: "https://demo.meriteye.techvill.net/", // TODO: Replace with MeritEye live/demo URL.
     githubLabel: "GitHub Repository",
@@ -239,9 +247,11 @@ export const projects: Project[] = [
   },
   {
     name: "Martvill",
+    image: "/projects/martvill.jpg",
+    imageAlt: "Illustrative multi-vendor commerce preview for Martvill; not a product screenshot",
     type: "Multi-Vendor eCommerce ERP Platform",
     overview:
-      "A Laravel-based multi-vendor eCommerce ERP platform with vendor, inventory, payment, commission, and product management modules.",
+      "A multi-vendor eCommerce ERP platform built with Laravel and Vue.js. I developed backend modules for vendors, inventory, products, payments, and commissions.",
     techStack: ["Laravel", "MySQL", "Vue.js", "REST API", "Bootstrap", "GitHub Actions", "Docker"],
     achievements: [
       "Designed core ERP modules for inventory, product management, commissions, and vendor workflows.",
@@ -263,37 +273,37 @@ export const services: Service[] = [
   {
     title: "API Development",
     description:
-      "Secure, scalable REST API development using Laravel, PHP, Golang, OAuth2, JWT, and clean backend architecture.",
+      "I develop REST APIs with Laravel, PHP, and Golang, including OAuth2 and JWT authentication and integrations with external services.",
     icon: Network
   },
   {
     title: "ERP Development",
     description:
-      "Enterprise-grade ERP modules for inventory, vendor management, HRM, reporting, workflows, and business operations.",
+      "I build ERP modules for inventory, vendor management, HRM, and reporting, with workflows tailored to business operations.",
     icon: Layers3
   },
   {
     title: "Payment Gateway Integration",
     description:
-      "Secure integration with Stripe, PayPal, local payment gateways, crypto payments, OAuth flows, and transaction processing systems.",
+      "I integrate payment providers such as Stripe, PayPal, and CoinPayments, including authentication flows and transaction processing.",
     icon: LockKeyhole
   },
   {
     title: "Cloud Deployment",
     description:
-      "Production-ready deployment with Docker, AWS, CI/CD pipelines, Linux, Nginx, caching, and performance optimization.",
+      "I support application deployment with Docker, AWS, Linux, Nginx, and CI/CD pipelines, alongside caching and performance improvements.",
     icon: Rocket
   },
   {
     title: "System Architecture",
     description:
-      "Scalable backend architecture, database design, microservices planning, Redis caching, queue-ready systems, and API-first platforms.",
+      "I design backend services and databases, plan microservices, and use Redis caching to support reliable application performance.",
     icon: ShieldCheck
   },
   {
     title: "Technical Consulting",
     description:
-      "Code review, backend performance optimization, database optimization, deployment planning, and system improvement recommendations.",
+      "I review code, investigate backend and database performance, and help teams plan deployments and maintainable system improvements.",
     icon: Sparkles
   }
 ];

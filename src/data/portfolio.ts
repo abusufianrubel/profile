@@ -229,7 +229,7 @@ export const projects: Project[] = [
   {
     name: "MeritEye",
     image: "/projects/meriteye.svg",
-    imageAlt: "Illustrative vue.js application preview for MeritEye; not a product screenshot",
+    imageAlt: "Illustrative Vue.js application preview for MeritEye; not a product screenshot",
     type: "Vue.js Web Application",
     overview:
       "A Vue 3 web application where I worked on reusable components, state management with Pinia, and navigation with Vue Router.",

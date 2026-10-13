@@ -10,21 +10,32 @@ import { cn } from "@/lib/utils";
 
 export function MobileMenu() {
   const [open, setOpen] = React.useState(false);
+  const triggerRef = React.useRef<HTMLButtonElement>(null);
 
   React.useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        triggerRef.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", closeOnEscape);
     return () => {
       document.body.style.overflow = "";
+      document.removeEventListener("keydown", closeOnEscape);
     };
   }, [open]);
 
   return (
     <div className="md:hidden">
       <Button
+        ref={triggerRef}
         size="icon"
         variant="outline"
         aria-label={open ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={open}
+        aria-controls="mobile-navigation-dialog"
         onClick={() => setOpen((value) => !value)}
         className="bg-background/50 backdrop-blur"
       >
@@ -33,6 +44,10 @@ export function MobileMenu() {
       <AnimatePresence>
         {open ? (
           <motion.div
+            id="mobile-navigation-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

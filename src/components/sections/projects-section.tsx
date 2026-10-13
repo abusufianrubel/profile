@@ -75,26 +75,40 @@ export function ProjectsSection() {
                   </div>
                 </div>
                 <div className="mt-auto flex flex-wrap gap-3 pt-7">
-                  <a
-                    href={project.github}
-                    target={project.github === "#" ? undefined : "_blank"}
-                    rel={project.github === "#" ? undefined : "noreferrer"}
-                    aria-label={`${project.name} GitHub link`}
-                    className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition hover:border-primary/50 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-                  >
-                    <Github className="h-4 w-4" aria-hidden="true" />
-                    {project.githubLabel ?? "GitHub"}
-                  </a>
-                  <a
-                    href={project.liveDemo}
-                    target={project.liveDemo === "#" ? undefined : "_blank"}
-                    rel={project.liveDemo === "#" ? undefined : "noreferrer"}
-                    aria-label={`${project.name} live or demo link`}
-                    className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition hover:border-accent/50 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-                  >
-                    <ExternalLink className="h-4 w-4" aria-hidden="true" />
-                    {project.liveLabel ?? "Live Demo"}
-                  </a>
+                  {project.github === "#" ? (
+                    <span className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-muted-foreground" aria-label={`${project.name} repository is not public`}>
+                      <Github className="h-4 w-4" aria-hidden="true" />
+                      {project.githubLabel ?? "Private Repository"}
+                    </span>
+                  ) : (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View the ${project.name} GitHub repository (opens in a new tab)`}
+                      className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition hover:border-primary/50 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    >
+                      <Github className="h-4 w-4" aria-hidden="true" />
+                      {project.githubLabel ?? "GitHub"}
+                    </a>
+                  )}
+                  {project.liveDemo === "#" ? (
+                    <span className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-muted-foreground" aria-label={`${project.name} is a private project`}>
+                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                      {project.liveLabel ?? "Private Project"}
+                    </span>
+                  ) : (
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View the ${project.name} live demo (opens in a new tab)`}
+                      className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition hover:border-accent/50 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    >
+                      <ExternalLink className="h-4 w-4" aria-hidden="true" />
+                      {project.liveLabel ?? "Live Demo"}
+                    </a>
+                  )}
                 </div>
               </Card>
             </motion.article>

@@ -62,16 +62,15 @@ export function HeroSection() {
           </div>
 
           <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight text-slate-950 dark:text-white sm:text-5xl md:text-6xl xl:text-7xl lg:mx-0">
-            Software{" "}
+            Abu Sufian Rubel
+            <br />
             <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-sky-400 bg-clip-text text-transparent">
-              Engineer
+              Software Engineer
             </span>
             <br />
             &amp; Full-Stack
             <br />
             Developer
-            <br />
-            Portfolio
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-300 sm:text-lg lg:mx-0">
@@ -110,7 +109,7 @@ export function HeroSection() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-cyan-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 dark:from-blue-500/10 dark:via-cyan-500/10" />
                 <div className="absolute left-0 top-0 h-1 w-0 bg-gradient-to-r from-blue-600 to-cyan-500 transition-all duration-500 group-hover:w-full" />
-                <Icon className="mx-auto mb-3 h-6 w-6 text-cyan-500 transition-transform duration-300 group-hover:scale-110 group-hover:text-blue-600" />
+                <Icon aria-hidden="true" className="mx-auto mb-3 h-6 w-6 text-cyan-500 transition-transform duration-300 group-hover:scale-110 group-hover:text-blue-600" />
                 <div className="text-2xl font-extrabold text-slate-950 dark:text-white">
                   {value}
                 </div>
@@ -238,7 +237,7 @@ export function HeroSection() {
                 }}
                 className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-blue-100 text-blue-600 transition-colors duration-300 group-hover:bg-blue-600 group-hover:text-white dark:bg-blue-500/10 dark:text-blue-300 dark:group-hover:bg-blue-500 dark:group-hover:text-white"
               >
-                <Globe2 size={32} />
+                <Globe2 aria-hidden="true" size={32} />
               </motion.div>
             </div>
           </motion.div>

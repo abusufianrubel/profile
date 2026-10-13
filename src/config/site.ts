@@ -1,5 +1,8 @@
 export const RESUME_URL = "/Abu-Sufian-Rubel-Resume.pdf";
 
+const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sufiandev.vercel.app";
+const canonicalUrl = configuredUrl.replace(/\/+$/, "");
+
 export const siteConfig = {
   name: "Abu Sufian Rubel — Software Engineer",
   displayName: "Abu Sufian Rubel",
@@ -7,7 +10,7 @@ export const siteConfig = {
   location: "Dhaka, Bangladesh",
   remoteAvailability: "Available for Remote Opportunities",
   experience: "5+ Years",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://sufiandev.vercel.app/",
+  url: canonicalUrl,
   email: "rubel.nstu27@gmail.com",
   phone: "+8801320583389",
   whatsappUrl: "https://wa.me/8801320583389",
@@ -15,9 +18,9 @@ export const siteConfig = {
   linkedinUrl: "https://www.linkedin.com/in/sufianrubel/",
   resumeUrl: RESUME_URL,
   seo: {
-    title: "Abu Sufian Rubel | Software Engineer & Full-Stack Developer",
+    title: "Abu Sufian Rubel | Full-Stack Software Engineer",
     description:
-      "Software engineer and full-stack developer in Dhaka with 5+ years of experience in Laravel, PHP, Golang, Vue.js, REST APIs, ERP, and payment integrations.",
+      "Abu Sufian Rubel is a full-stack software engineer in Dhaka with 5+ years of experience in Laravel, PHP, Golang, Vue.js, REST APIs, ERP, and payment systems.",
     keywords: [
       "Abu Sufian Rubel",
       "Software Engineer Bangladesh",

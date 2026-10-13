@@ -47,6 +47,11 @@ html {
   overflow-x: hidden;
 }
 
+section[id],
+#main-content {
+  scroll-margin-top: 6rem;
+}
+
 body {
   min-height: 100vh;
   overflow-x: hidden;

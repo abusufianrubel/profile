@@ -6,18 +6,22 @@ import { HeroSection } from "@/components/sections/hero-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { TechStackSection } from "@/components/sections/tech-stack-section";
+import { StructuredData } from "@/components/seo/structured-data";
 
 export default function HomePage() {
   return (
-    <main id="main-content" className="relative min-h-screen overflow-hidden">
-      <HeroSection />
-      <AboutSection />
-      <TechStackSection />
-      <ExperienceSection />
-      <EducationSection />
-      <ProjectsSection />
-      <ServicesSection />
-      <ContactSection />
-    </main>
+    <>
+      <StructuredData />
+      <main id="main-content" className="relative min-h-screen overflow-hidden">
+        <HeroSection />
+        <AboutSection />
+        <TechStackSection />
+        <ExperienceSection />
+        <EducationSection />
+        <ProjectsSection />
+        <ServicesSection />
+        <ContactSection />
+      </main>
+    </>
   );
 }

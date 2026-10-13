@@ -17,6 +17,8 @@ const inter = Inter({
   display: "swap",
 });
 
+const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -24,6 +26,8 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.displayName}`,
   },
   description: siteConfig.seo.description,
+  applicationName: siteConfig.displayName,
+  category: "technology",
   keywords: [...siteConfig.seo.keywords],
   authors: [{ name: siteConfig.displayName, url: siteConfig.url }],
   creator: siteConfig.displayName,
@@ -33,8 +37,9 @@ export const metadata: Metadata = {
     shortcut: "/fabicon.png",
     apple: "/fabicon.png",
   },
+  manifest: "/manifest.webmanifest",
   alternates: {
-    canonical: siteConfig.url,
+    canonical: "/",
   },
   openGraph: {
     type: "website",
@@ -57,6 +62,16 @@ export const metadata: Metadata = {
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
     images: [absoluteUrl(siteConfig.url, "/opengraph-image")],
+  },
+  verification: googleVerification
+    ? {
+        google: googleVerification,
+      }
+    : undefined,
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
   robots: {
     index: true,

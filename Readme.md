@@ -1,6 +1,6 @@
 # Abu Sufian Rubel Portfolio
 
-A premium, production-ready portfolio website for **Abu Sufian Rubel**, a Senior Software Engineer & Laravel Developer.
+A production-ready portfolio website for **Abu Sufian Rubel**, a Software Engineer and Full-Stack Developer.
 
 Built with modern web technologies including Next.js 15, TypeScript, Tailwind CSS, Framer Motion, React Hook Form, Zod, and Resend.
 
@@ -63,6 +63,7 @@ RESEND_API_KEY=your_resend_api_key
 CONTACT_TO_EMAIL=example@gmail.com
 CONTACT_FROM_EMAIL=Portfolio <onboarding@resend.dev>
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
+GOOGLE_SITE_VERIFICATION=your_google_verification_token
 ```
 
 ### Start development server
@@ -138,7 +139,20 @@ RESEND_API_KEY=
 CONTACT_TO_EMAIL=
 CONTACT_FROM_EMAIL=
 NEXT_PUBLIC_SITE_URL=
+GOOGLE_SITE_VERIFICATION=
 ```
+
+Set `NEXT_PUBLIC_SITE_URL` to the single production origin Google should index, without a trailing slash. The application uses that value for canonical, Open Graph, sitemap, robots, and JSON-LD URLs.
+
+### Google Search Console
+
+1. Add the production site as a Domain property (DNS verification) or URL-prefix property.
+2. For URL-prefix HTML-tag verification, copy only the token from the `content` attribute into `GOOGLE_SITE_VERIFICATION` and redeploy.
+3. Submit `/sitemap.xml` in Search Console.
+4. Inspect the canonical homepage URL and request indexing after the production deployment is live.
+5. Test `/robots.txt`, `/sitemap.xml`, and the homepage with Google's URL Inspection and Rich Results tools.
+
+Search visibility and rankings depend on Google's crawling, indexing, competition, content quality, and external signals; these technical controls do not guarantee rankings.
 
 ### Security Notes
 

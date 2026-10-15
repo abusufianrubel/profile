@@ -14,8 +14,8 @@ export const siteConfig = {
   email: "rubel.nstu27@gmail.com",
   phone: "+8801320583389",
   whatsappUrl: "https://wa.me/8801320583389",
-  githubUrl: "https://github.com/sufianrubel",
-  linkedinUrl: "https://www.linkedin.com/in/sufianrubel/",
+  githubUrl: "https://github.com/abusufianrubel",
+  linkedinUrl: "https://www.linkedin.com/in/abusufianrubel/",
   resumeUrl: RESUME_URL,
   seo: {
     title: "Abu Sufian Rubel | Full-Stack Software Engineer",
